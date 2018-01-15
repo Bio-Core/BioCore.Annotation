@@ -1,0 +1,11 @@
+Package: BioCore.Annotation
+Type: Package
+Title: BioCore Variant Annotation Package
+Version: 0.1.0
+Author: Richard J. de Borja
+Maintainer: Richard J. de Borja <richard.deborja@uhnresearch.ca>
+Description: A R package used in the PMCC BioCore team for summarizing and annotating variants.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.1), plyr (>= 1.8.1), dplyr (>= 0.4.1)
