@@ -3,11 +3,12 @@ load_annovar_file <- function(file = NULL) {
 
   data <- read.table(
     file = file,
-    header = TRUE,
+    header = FALSE,
     as.is = TRUE,
     sep = "\t",
     quote = "\"",
     skip = 1
   )
+  colnames(data) <- get_annovar_colnames()
   return(data)
 }

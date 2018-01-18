@@ -22,7 +22,7 @@ Returns the variant allele fraction for the given variant.
 Richard J. de Borja
 }
 \examples{
-  format_string = "1/1:41:8:8:0:8:100%:7.77E-5:0:50:0:0:6:2:1.0000"
+  format_string = '1/1:41:8:8:0:8:100:7.77E-5:0:50:0:0:6:2:1.0000'
   print(get_variant_allele_fraction(data=format_string))
 }
 \keyword{ annovar }
