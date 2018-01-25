@@ -1,4 +1,4 @@
-create_merged_filtered_data <- function(path=NULL, pattern='.hg19_multianno.txt') {
+create_merged_data <- function(path=NULL, pattern='.hg19_multianno.txt') {
   if (is.null(path)) stop("Mandatory argument path is missing")
 
   files <- get_annovar_files(path=path, recursive=FALSE)
