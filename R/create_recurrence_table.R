@@ -1,10 +1,6 @@
-create_recurrence_table <- function(path=NULL, pattern='.hg19_multianno.txt', recurrence_threshold=2) {
-  if (is.null(path)) stop("Mandatory argument path is missing")
+create_recurrence_table <- function(data=NULL, recurrence_threshold=2) {
+  if (is.null(data)) stop("Mandatory argument data is missing")
 
-  files <- get_annovar_files(path=path, recursive=FALSE)
-  data <- create_merged_filtered_data(path=path, pattern=pattern)
-  data <- filter_on_population(data=data)
-  data <- filter_on_depth(data=data)
   all_genes <- sort(unique(data$Gene.refGene))
   rec_data <- data.frame(matrix(nrow=length(all_genes), ncol=length(unique(data$sample))))
   rownames(rec_data) <- all_genes
@@ -20,5 +16,7 @@ create_recurrence_table <- function(path=NULL, pattern='.hg19_multianno.txt', re
   rec_data$rec <- rec_data_simple$rec
   rec_data <- rec_data[order(rec_data$rec),]
 
-  return(rec_data[rec_data$rec >= recurrence_threshold,])
+  rec_data <- rec_data[rec_data$rec >= recurrence_threshold,]
+  rec_data$rec <- NULL
+  return(rec_data)
 }
