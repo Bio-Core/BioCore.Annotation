@@ -8,4 +8,4 @@ Description: A R package used in the PMCC BioCore team for summarizing and annot
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
-Depends: R (>= 3.1), plyr (>= 1.8.1), dplyr (>= 0.4.1)
+Depends: R (>= 3.1), plyr (>= 1.8.1), dplyr (>= 0.4.1), Biostrings (>= 2.4), deconstructSigs (>= 1.8), plotting.general (>= 0.14)
