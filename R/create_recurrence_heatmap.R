@@ -10,11 +10,11 @@ create_recurrence_heatmap <- function(data=NULL) {
       x = list(
       at = seq(1, ncol(data), 1),
       rot = 90,
-      cex = 0.7
+      cex = 0.5
       ),
       y = list(
         at=seq(1, nrow(data), 1),
-        cex = 0.7
+        cex = 0.5
       )
     )
   )
