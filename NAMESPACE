@@ -1,9 +1,12 @@
 exportPattern("^[[:alpha:]]+")
 
 export(
-  "add_read_depth_column",
-  "add_variant_allele_fraction_column",
-  "filter_annovar_data",
-  "get_annovar_colnames",
-  "load_annovar_file"
+  "create_recurrence_table",
+  "create_recurrence_heatmap",
+  "create_variant_signature_barplot",
+  "filter_on_depth",
+  "filter_on_population",
+  "get_annovar_files",
+  "get_coding_mutations",
+  "get_snv"
 )
