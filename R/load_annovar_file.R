@@ -1,4 +1,4 @@
-load_annovar_file <- function(file = NULL) {
+load_annovar_file <- function(file = NULL, colheader=get_annovar_colnames()) {
   if (is.null(file)) stop("Mandatory argument file is missing")
 
   data <- read.table(
@@ -9,6 +9,6 @@ load_annovar_file <- function(file = NULL) {
     quote = "\"",
     skip = 1
   )
-  colnames(data) <- get_annovar_colnames()
+  colnames(data) <- colheader
   return(data)
 }

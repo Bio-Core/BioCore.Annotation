@@ -6,6 +6,8 @@ export(
   "create_variant_signature_barplot",
   "filter_on_depth",
   "filter_on_population",
+  "get_annovar_colnames",
+  "get_annovar_colnames_hg38",
   "get_annovar_files",
   "get_coding_mutations",
   "get_snv"
