@@ -16,9 +16,6 @@ filter_annovar_data(data = NULL, filter_name = NULL, value = NULL, type = NULL)
   \item{value}{ The value of the filter (required) }
   \item{type}{ The type of filtering, must be one of "eq", "lt", "lteq", "gt" or "gteq" (required) }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
 \value{
 Returns a dataframe with filtered data removed.
 }
