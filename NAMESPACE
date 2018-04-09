@@ -1,14 +1,31 @@
 exportPattern("^[[:alpha:]]+")
 
+importFrom("grDevices", "colorRampPalette")
+importFrom("stats", "filter")
+importFrom("utils", "read.table")
+
 export(
-  "create_recurrence_table",
+  "add_protein_change_column",
+  "add_read_depth_column",
+  "add_sample_name",
+  "add_variant_allele_fraction_column",
+  "create_merged_data",
+  "create_protein_change_table",
   "create_recurrence_heatmap",
+  "create_recurrence_table",
   "create_variant_signature_barplot",
+  "filter_annovar_data",
   "filter_on_depth",
   "filter_on_population",
   "get_annovar_colnames",
   "get_annovar_colnames_hg38",
   "get_annovar_files",
   "get_coding_mutations",
-  "get_snv"
+  "get_gene_name",
+  "get_protein_change",
+  "get_pyrimidine_change",
+  "get_read_depth",
+  "get_snv",
+  "get_variant_allele_fraction",
+  "load_annovar_file"
 )
