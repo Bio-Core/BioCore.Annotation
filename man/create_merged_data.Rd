@@ -7,11 +7,12 @@ Create merged data
 A function that imports ANNOVAR annotated SNV files from the BioCore pipeline.
 }
 \usage{
-create_merged_data(path = NULL, pattern = ".hg19_multianno.txt")
+create_merged_data(path = NULL, pattern = ".hg19_multianno.txt", colheader = get_annovar_colnames())
 }
 \arguments{
   \item{path}{full path to the ANNOVAR annotated SNV files (required)}
   \item{pattern}{suffix pattern to search in the directory (default: .hg19_multianno.txt)}
+  \item{colheader}{list of column names}
 }
 \value{
 Returns a dataframe containing merged SNV data from a cohort of samples.
