@@ -10,6 +10,20 @@ library(devtools)
 install_github("bio-core/BioCore.Annotation")
 ```
 
+
+### Installation of Dependencies
+There are several library/package dependencies that are required before the `BioCore.Annotation` can be used.
+
+```
+install.packages("plyr")
+install.packages("dplyr")
+install.packages("deconstructSigs")
+install_github("rdeborja/plotting.general")
+```
+
+To install `Biostrings`, refer to the `BioConductor` [package page](https://bioconductor.org/packages/release/bioc/html/Biostrings.html).
+
+
 ## Exported functions
 The following functions are exported from the package.
 
