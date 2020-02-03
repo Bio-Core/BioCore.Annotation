@@ -7,7 +7,7 @@ Filter on population data.
 A function for filtering variants on common population database occurrence.
 }
 \usage{
-filter_on_population(data = NULL, exac_threshold = 0.01, g1000_threshold = 0.01, esp_threshold = 0.01)
+filter_on_population(data = NULL, exac_threshold = 0.01, g1000_threshold = 0.01, esp_threshold = 0.01, exac="ExAC_ALL", g1000="X1000G_ALL", esp="ESP6500siv2_ALL")
 }
 \arguments{
   \item{data}{dataframe containing variant data (required)}
